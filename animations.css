@@ -1,0 +1,57 @@
+/* animations */
+.from-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.from-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.from-left.appear,
+.from-right.appear,
+.up.appear {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+.hover-up:hover {
+  transform: translateY(-5px);
+}
+/* Staggered Animation Delays */
+.delay-1 {
+  transition-delay: 0.1s;
+}
+.delay-2 {
+  transition-delay: 0.2s;
+}
+.delay-3 {
+  transition-delay: 0.3s;
+}
+.delay-4 {
+  transition-delay: 0.4s;
+}
+.delay-5 {
+  transition-delay: 0.5s;
+}
+.delay-6 {
+  transition-delay: 0.6s;
+}
+.delay-7 {
+  transition-delay: 0.7s;
+}
+.delay-8 {
+  transition-delay: 0.8s;
+}
+.delay-9 {
+  transition-delay: 0.9s;
+}

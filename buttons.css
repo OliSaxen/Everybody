@@ -1,0 +1,179 @@
+:root {
+  --primary: #1178a7;
+  --primary-dark: #0a4a6b;
+  --primary-light: #8fc7e2;
+  --accent: #d4af37;
+  --accent-dark: #b8941f;
+  --text: #2d3748;
+  --text-light: #718096;
+  --white: #ffffff;
+  --black: #1a202c;
+  --gray-light: #dae7f0;
+  --transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --radius: 12px;
+  --spacing-big: 60px;
+  --spacing-medium: 40px;
+  --spacing-small: 20px;
+  --weight-bold: 700;
+  --weight-regular: 400;
+  --weight-light: 300;
+}
+/* buttons */
+.cta-buttons{
+  display: flex;
+  gap: var(--spacing-small);
+}
+.button {
+  background-color: var(--primary);
+  color: var(--black);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.button-hero {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block; /* Add this */
+  transition: all 0.4s ease;
+}
+.button-hero-2 {
+  color: var(--white);
+  padding: 12px 24px;
+  outline: 1px solid var(--white);
+  outline-offset: -1px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.4s ease;
+  position: relative;
+  display: inline-block; /* Add this */
+}
+
+.button-hero-2:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+/* Social Buttons */
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.btn-whatsapp:hover {
+  background: #128c7e;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+}
+
+.btn-instagram {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  color: #fff;
+}
+
+.btn-instagram:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(193, 53, 132, 0.3);
+}
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-float:active {
+  transform: scale(0.95);
+}
+
+.whatsapp-icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1); /* This makes colored SVGs white */
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover .whatsapp-icon {
+  transform: scale(1.1);
+}
+
+/* Pulse Animation */
+.pulse-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #25d366;
+  animation: pulse 2s infinite;
+  /* Start with animation properties */
+  animation-fill-mode: both;
+  /* Ensure smooth scaling */
+  will-change: transform, opacity;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Hide pulse on hover */
+.whatsapp-float:hover .pulse-ring {
+  animation: none;
+  opacity: 0;
+}
+
+.whatsapp-float:hover::after {
+  opacity: 1;
+}

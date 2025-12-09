@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="components.css" />
+    <link rel="stylesheet" href="typography.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="animations.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--nav-->
+      <nav class="nav">
+        <div class="logo-container">
+          <a class="logo" href="">Everybody.uy</a>
+        </div>
+        <ul class="nav-links gap-big list-style-none">
+          <li>
+            <a class="nav-link text-decoration-none" href="#home">Inicio</a>
+          </li>
+          <li>
+            <a class="nav-link text-decoration-none" href="#vsl"
+              >Consignea</a
+            >
+          </li>
+          <li>
+            <a class="nav-link text-decoration-none" href="#about-us"
+              >Sobre nosotros</a
+            >
+          </li>
+          <li>
+            <a class="nav-link text-decoration-none" href="#portfolio"
+              >Portafolio</a
+            >
+          </li>
+
+          <li>
+            <a class="nav-link text-decoration-none" href="#contact"
+              >Contactanos</a
+            >
+          </li>
+        </ul>
+        <!--hamburguer menu when mobile display, display none otherwise-->
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <!--hero section starts here-->
+      <header id="home">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">Everybody.uy</h1>
+            <p class="hero-subtitle">Nuestra página oficial</p>
+            <div class="cta-buttons">
+              <a
+                class="button-hero hover-up text-decoration-none"
+                href="#portfolio"
+                >Portfolio</a
+              >
+              <a
+                class="button-hero-2 hover-up text-decoration-none"
+                href="#contact"
+                >Contactanos</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- VSL -->
+        <section
+          class="vsl-section padding-medium bg-color-primary"
+          id="vsl"
+        >
+          <div class="vsl-text from-left">
+            <h2 class="section-title title-underline-left">Más ventas en menos tiempo</h2>
+            <p class="section-subtitle">Te explico cómo hacerlo</p>
+            <p class="section-text">
+              Everybody es la agencia de contenido que va a llevar tu automotora
+              del punto A inicial, al punto B deseado ¿Querés saber cómo lo
+              hacemos? En este breve video te explico cómo funciona nuestro
+              método.
+            </p>
+          </div>
+          <div class="video-container from-right">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </section>
+      </main>
+      <!--logo-section autside of main tag because of a bug-->
+      <div class="logos-carousel">
+        <!--i have 3 identical tracks so the transition is clean even in a big window-->
+        <div class="logos-track">
+          <img src="logos/frenecar-logo.png" alt="frenecar" class="logo-img" />
+          <img
+            src="logos/azul-automoviles-logo.png"
+            alt="azul automoviles"
+            class="logo-img"
+          />
+          <img src="logos/mazda.png" alt="mazda" class="logo-img mazda" />
+          <img
+            src="logos/pereira-automoviles-logo.webp"
+            alt="pereira automoviles"
+            class="logo-img"
+          />
+          <img src="logos/maxus-edited.png" alt="maxus" class="logo-img" />
+        </div>
+        <!--track 2-->
+        <div aria-hidden class="logos-track">
+          <img src="logos/frenecar-logo.png" alt="frenecar" class="logo-img" />
+          <img
+            src="logos/azul-automoviles-logo.png"
+            alt="azul automoviles"
+            class="logo-img"
+          />
+          <img src="logos/mazda.png" alt="mazda" class="logo-img mazda" />
+          <img
+            src="logos/pereira-automoviles-logo.webp"
+            alt="pereira automoviles"
+            class="logo-img"
+          />
+          <img src="logos/maxus-edited.png" alt="maxus" class="logo-img" />
+        </div>
+        <!--track 3-->
+        <div aria-hidden class="logos-track">
+          <img src="logos/frenecar-logo.png" alt="frenecar" class="logo-img" />
+          <img
+            src="logos/azul-automoviles-logo.png"
+            alt="azul automoviles"
+            class="logo-img"
+          />
+          <img src="logos/mazda.png" alt="mazda" class="logo-img mazda" />
+          <img
+            src="logos/pereira-automoviles-logo.webp"
+            alt="pereira automoviles"
+            class="logo-img"
+          />
+          <img src="logos/maxus-edited.png" alt="maxus" class="logo-img" />
+        </div>
+      </div>
+      <main>
+        <!-- Mission-section -->
+        <section
+          class="mission-section padding-medium bg-color-secondary"
+          id="about-us"
+        >
+          <div class="mission-img from-left">
+            <img
+              src="images/portrato.webp"
+              alt="Una foto de mi"
+            />
+          </div>
+          <div class="mission-text from-right">
+            <h2 class="section-title text-centered title-underline">
+              ¿Qué es Everybody?
+            </h2>
+            <p class="section-subtitle text-centered">Sobre nosotros</p>
+            <p class="section-text">
+              Everybody es una Agencia de Contenido para Redes Sociales, que se
+              encarga específica y únicamente de ayudar a automotoras para que
+              puedan aumentar su porcentaje de autos vendidos por mes de manera
+              significativa.
+            </p>
+            <p class="section-text">
+              Si tenes una automotora en Uruguay que vende entre 10 a 15 autos
+              por mes y sentís que podrías estar vendiendo más, tal vez sea
+              momento de hacer un cambio.
+            </p>
+          </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section
+          class="portfolio-section padding-medium bg-color-primary"
+          id="portfolio"
+        >
+          <div class="portfolio-header text-centered">
+            <h2 class="section-title title-underline">Portfolio</h2>
+            <p class="section-subtitle">
+              Una selección curada de nuestras mejores fotos
+            </p>
+          </div>
+          <div class="portfolio-grid">
+            <!-- 1 Large item -->
+            <div
+              class="portfolio-item hover-up shadow radio large up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/auto-amarillo.webp"
+                  alt="una foto de un auto amarillo"
+                />
+              </div>
+            </div>
+            <!-- Small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/auto-blanco-3.webp"
+                  alt="una foto de un auto blanco"
+                />
+              </div>
+            </div>
+            <!-- Small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/auto-blanco-pereira.webp"
+                  alt="una foto de un auto blanco con pereira automóviles de fondo"
+                />
+              </div>
+            </div>
+            <!-- Small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/auto-negro-2.webp"
+                  alt="una foto de un auto de un auto negro"
+                />
+              </div>
+            </div>
+            <!-- Medium item -->
+            <div
+              class="portfolio-item hover-up shadow radio medium up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/auto-blanco-2.webp"
+                  alt="una foto de un auto blanco"
+                />
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/auto-blanco-4.webp"
+                  alt="una foto de un auto blanco"
+                />
+              </div>
+            </div>
+
+            <!-- small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/auto-blanco.webp"
+                  alt="una foto de un auto blanco"
+                />
+              </div>
+            </div>
+
+            <!-- small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/auto-negro.webp"
+                  alt="una foto de un auto negro"
+                />
+              </div>
+            </div>
+
+            <!-- Small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/auto-rojo-2.webp"
+                  alt="una foto de un auto rojo"
+                />
+              </div>
+            </div>
+            <!-- small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/auto-rojo-3.webp"
+                  alt="una foto de un auto rojo"
+                />
+              </div>
+            </div>
+
+            <!-- small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/ciompi.webp"
+                  alt="una foto de la automotora Ciompi"
+                />
+              </div>
+            </div>
+            <!-- medium  item -->
+            <div
+              class="portfolio-item hover-up shadow radio medium up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/mazda-img.webp"
+                  alt="una foto de un auto y de fondo la automotora Mazda"
+                />
+              </div>
+            </div>
+            <!-- small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/mercedes-blanco-2.webp"
+                  alt="una foto de un mercedes blanco"
+                />
+              </div>
+            </div>
+            <!-- small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/mercedes-blanco.webp"
+                  alt="una foto de un mercedes blanco"
+                />
+              </div>
+            </div>
+            <!-- small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/pereira-automoviles.webp"
+                  alt="una foto de la Pereira automóviles"
+                />
+              </div>
+            </div>
+            <!-- small  item -->
+            <div
+              class="portfolio-item hover-up shadow radio small up"
+              data-category="photo"
+            >
+              <div class="portfolio-image">
+                <img
+                  src="images/auto-rojo.webp"
+                  alt="una foto de un auto rojo"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact -->
+        <section
+          class="contact-section padding-medium bg-color-secondary"
+          id="contact"
+        >
+          <h2 class="section-title title-underline full-width text-centered">
+            Contáctanos
+          </h2>
+          <div class="contact-card from-left">
+            <div class="contact-icon instagram">
+              <img
+                src="social/instagram.svg"
+                alt="instagram"
+                class="instagram-icon"
+              />
+            </div>
+            <h3>Ve nuestro trabajo</h3>
+            <p>
+              Explorá nuestros últimos proyectos y contenido especial en
+              Instagram
+            </p>
+            <a
+              href="https://instagram.com/everybody.uy"
+              class="social-btn btn-instagram"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+              Seguinos en Instagram
+            </a>
+          </div>
+          <div class="contact-card from-right">
+            <div class="contact-icon whatsupp">
+              <img
+                src="social/whatsapp.svg"
+                alt="WhatsApp"
+                class="whatsapp-icon"
+              />
+            </div>
+            <h3>Empezá una conversación</h3>
+            <p>Si preferís una comunicación rápida, escribinos en whatsapp</p>
+            <a
+              href="https://wa.me/+59892911332?text=Hola%20Everybody.uy%20Studio%2C%20Te%20escribo%20desde%20la%20pagina%20web"
+              class="social-btn btn-whatsapp"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Envíanos un mensaje
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="footer bg-color-terciary">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <h3>Everybody.uy</h3>
+              <p>Professional Photography</p>
+            </div>
+            <p class="footer-description">
+              Creating timeless imagery that tells your unique story through
+              artistic vision and technical excellence.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links list-style-none">
+              <li><a class="text-decoration-none" href="#home">Home</a></li>
+              <li>
+                <a class="text-decoration-none" href="#vsl">Consignea</a>
+              </li>
+              <li><a class="text-decoration-none" href="#about-us">Sobre nosotros</a></li>
+              <li>
+                <a class="text-decoration-none" href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#contact">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Montevideo, Uruguay</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>Acá el numero de teléfono</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>acá va el mail</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-section">
+            <div class="footer-bottom-content">
+              <p>&copy; 2025 Everybody.uy -- All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- WhatsApp Floating Button -->
+      <a
+        href="https://wa.me/+59892911332?text=Hola%20Everybody.uy%20Studio%2C%20Te%20escribo%20desde%20la%20pagina%20web"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="pulse-ring"></div>
+        <img src="social/whatsapp.svg" alt="WhatsApp" class="whatsapp-icon" />
+      </a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
